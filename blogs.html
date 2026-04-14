@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Nitesh Pipralia</title>
+    <style>
+        :root {
+            --dark-bg: #0d1117;
+            --light-bg: #1c2128;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(13, 17, 23, 0.95);
+            border-bottom: 1px solid rgba(88, 166, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+
+        header a {
+            color: var(--text-primary);
+            text-decoration: none;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        header a:hover {
+            background: rgba(88, 166, 255, 0.15);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--light-bg);
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-card h2 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .blog-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .blog-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blogs</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <main>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <h2>Here's a knock knock joke for you</h2>
+                <p>Knock knock!<br>
+                    Who's there?<br>
+                    Lettuce.<br>
+                    Lettuce who?<br>
+                    Lettuce in, it's cold out here!</p>
+                <a href="#">Read Article</a>
+            </article>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Nitesh Kumar Pipralia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
